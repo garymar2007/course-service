@@ -1,5 +1,4 @@
 FROM openjdk:17
-WORKDIR /app
-COPY ./target/course-service.jar /app
 EXPOSE 8080
-CMD ["java", "-jar", "course-service.jar"]
+add target/course-service.jar course-service.jar
+CMD ["java", "-jar", "/course-service.jar"]
